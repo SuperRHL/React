@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 class Ninjas extends Component {
   render() {
     const { ninjas } = this.props;
