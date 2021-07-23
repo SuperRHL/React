@@ -1,5 +1,5 @@
 import Ninjas from "./ninja";
-
+import React from "react";
 function App() {
   React.state = {
     ninjas: [
