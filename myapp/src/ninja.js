@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-class Ninjas extends Component {
-  render() {
+function Ninjas(){
+  
     const { ninjas } = this.props;
     const ninjaList = ninjas.map((ninja) => {
       return (
@@ -14,6 +14,6 @@ class Ninjas extends Component {
     });
     return <div className="ninja-list">{ninjaList}</div>;
   }
-}
+
 
 export default Ninjas;
