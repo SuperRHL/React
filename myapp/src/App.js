@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Ninjas from "./ninja";
 
 function App() {
+  React.state = {
+    ninjas: [
+      { name: "Rahul", age: 30, belt: "Black", id: 1 },
+      { name: "Elon", age: 25, belt: "Blue", id: 2 },
+      { name: "Rowl", age: 20, belt: "Red", id: 3 },
+    ],
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My first react app!</h1>
+      <p>Welcome!</p>
+      <Ninjas ninjas={React.state.ninjas}/>
     </div>
   );
 }
