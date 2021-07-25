@@ -16,8 +16,8 @@ class App extends Component {
     this.setState({ninjas: ninjas})
   }
   deleteNinja=(id)=>{
-    let ninjas = this.state
-    this.setState({})
+    let ninjas = this.state.ninjas.filter(ninja=>{return ninja.id !== id})
+    this.setState({ninjas: ninjas})
   }
   render() {
     return (

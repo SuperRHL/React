@@ -1,4 +1,5 @@
 import React from "react";
+import './ninjas.css'
 // class based components have states and functional components are more focused on the ui
 const Ninjas = ({ ninjas,deleteNinja }) => {
   const ninjaList = ninjas.map((ninja) => {

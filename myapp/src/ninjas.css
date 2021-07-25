@@ -1,0 +1,9 @@
+body{
+    background-color: peachpuff;
+    transition: all 1s;
+}
+
+.ninja form{
+    background-color: papayawhip;
+    padding: 20px;
+}
